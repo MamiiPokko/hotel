@@ -20,4 +20,9 @@ class HotelController extends Controller
     {
     	return view('pages.map');
     }
+
+    public function getcontact()
+    {
+        return view('pages.contact');
+    }
 }

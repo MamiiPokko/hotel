@@ -41,7 +41,7 @@ http://www.templatemo.com/tm-475-holiday
                             <li><a href="{{URL('/welcome')}}" class="active">Home</a></li>
                             <li><a href="{{URL('/room')}}">Room</a></li>
                             <li><a href="{{URL('/map')}}">Map</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{URL('/contact')}}">Contact</a></li>
                         </ul>
                     </nav>      
                 </div>              

@@ -18,3 +18,16 @@ Route::get('/', function () {
 Route::get('/room', 'HotelController@getroom');
 Route::get('/welcome', 'HotelController@getwelcome');
 Route::get('/map', 'HotelController@getmap');
+Route::get('/contact', 'HotelController@getcontact');
+
+
+
+Route::get('check-connect',function(){
+ if(DB::connection()->getDatabaseName())
+ {
+ return "Yes! successfully connected to the DB: " . DB::connection()->getDatabaseName();
+ }else{
+ return 'Connection False !!';
+ }
+
+});
