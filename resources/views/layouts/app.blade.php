@@ -10,11 +10,11 @@ Holiday Template
 http://www.templatemo.com/tm-475-holiday
 -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
-  <link href="css/flexslider.css" rel="stylesheet">
-  <link href="css/templatemo-style.css" rel="stylesheet">
+  <link href="{{URL('css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{URL('css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{URL('css/bootstrap-datetimepicker.min.css')}}" rel="stylesheet">  
+  <link href="{{URL('css/flexslider.css')}}" rel="stylesheet">
+  <link href="{{URL('css/templatemo-style.css')}}" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,7 +60,7 @@ http://www.templatemo.com/tm-475-holiday
                     <p class="tm-banner-subtitle">For Your Holidays</p>
                     <a href="#more" class="tm-banner-link">Learn More</a>   
                 </div>
-                <img src="img/patong1.jpg" alt="Image" />  
+                <img src="{{URL('images/patong1.jpg')}}" alt="Image" />  
             </li>
             <li>
                 <div class="tm-banner-inner">
@@ -68,7 +68,7 @@ http://www.templatemo.com/tm-475-holiday
                     <p class="tm-banner-subtitle">Wonderful Destinations</p>
                     <a href="#more" class="tm-banner-link">Learn More</a>   
                 </div>
-              <img src="img/phromtape.jpg" alt="Image" />
+              <img src="{{URL('images/phromtape.jpg')}}" alt="Image" />
             </li>
             <li>
                 <div class="tm-banner-inner">
@@ -76,7 +76,7 @@ http://www.templatemo.com/tm-475-holiday
                     <p class="tm-banner-subtitle">Velit Auctor</p>
                     <a href="#more" class="tm-banner-link">Learn More</a>   
                 </div>
-              <img src="img/khaorang.jpg" alt="Image" />
+              <img src="{{URL('images/khaorang.jpg')}}" alt="Image" />
             </li>
           </ul>
         </div> 
@@ -106,30 +106,27 @@ http://www.templatemo.com/tm-475-holiday
             </div>
         </div>   
     </footer>
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>              <!-- jQuery -->
-    <script type="text/javascript" src="js/moment.js"></script>                         <!-- moment.js -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>                  <!-- bootstrap js -->
-    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>   <!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="{{URL('js/jquery-1.11.2.min.js')}}"></script>              <!-- jQuery -->
+    <script type="text/javascript" src="{{URL('js/moment.js')}}"></script>                         <!-- moment.js -->
+    <script type="text/javascript" src="{{URL('js/bootstrap.min.js')}}"></script>                  <!-- bootstrap js -->
+    <script type="text/javascript" src="{{URL('js/bootstrap-datetimepicker.min.js')}}"></script>   <!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
+    <script type="text/javascript" src="{{URL('js/jquery.flexslider-min.js')}}"></script>
 <!--
     <script src="js/froogaloop.js"></script>
     <script src="js/jquery.fitvid.js"></script>
 -->
-    <script type="text/javascript" src="js/templatemo-script.js"></script>              <!-- Templatemo Script -->
+    <script type="text/javascript" src="{{URL('js/templatemo-script.js')}}"></script>              <!-- Templatemo Script -->
     <script>
         // HTML document is loaded. DOM is ready.
         $(function() {
-
             $('#hotelCarTabs a').click(function (e) {
               e.preventDefault()
               $(this).tab('show')
             })
-
             $('.date').datetimepicker({
                 format: 'MM/DD/YYYY'
             });
             $('.date-time').datetimepicker();
-
             // https://css-tricks.com/snippets/jquery/smooth-scrolling/
             $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -148,7 +145,6 @@ http://www.templatemo.com/tm-475-holiday
         // Load Flexslider when everything is loaded.
         $(window).load(function() {         
             // Vimeo API nonsense
-
 /*
               var player = document.getElementById('player_1');
               $f(player).addEvent('ready', ready);
@@ -171,12 +167,10 @@ http://www.templatemo.com/tm-475-holiday
                 });
               }
 */
-
              
              
               // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
 /*
-
               $(".flexslider")
                 .fitVids()
                 .flexslider({
@@ -190,16 +184,11 @@ http://www.templatemo.com/tm-475-holiday
                   }
               });
 */
-
-
               
-
 //  For images only
             $('.flexslider').flexslider({
                 controlNav: false
             });
-
-
         });
     </script>
  </body>

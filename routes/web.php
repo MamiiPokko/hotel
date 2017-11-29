@@ -20,6 +20,12 @@ Route::get('/welcome', 'HotelController@getwelcome');
 Route::get('/map', 'HotelController@getmap');
 Route::get('/contact', 'HotelController@getcontact');
 
+//Roomtype
+Route::get('/penhouse', 'HotelController@getpenhouse');
+Route::get('/topfloor', 'HotelController@gettopfloor');
+Route::get('/medium', 'HotelController@getmedium');
+Route::get('/pool', 'HotelController@getpool');
+
 
 
 Route::get('check-connect',function(){

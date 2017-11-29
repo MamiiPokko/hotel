@@ -25,4 +25,24 @@ class HotelController extends Controller
     {
         return view('pages.contact');
     }
+
+    public function getpenhouse()
+    {
+        return view('pages.penhouse');
+    }
+
+    public function gettopfloor()
+    {
+        return view('pages.topfloor');
+    }
+
+    public function getmedium()
+    {
+        return view('pages.medium');
+    }
+
+    public function getpool()
+    {
+        return view('pages.pool');
+    }
 }
