@@ -30,7 +30,7 @@ http://www.templatemo.com/tm-475-holiday
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
-                    <a href="#" class="tm-site-name">PATONG OCEAN</a>    
+                    <a href="{{URL('/welcome')}}" class="tm-site-name">PATONG OCEAN</a>    
                 </div>
                 <div class="col-lg-6 col-md-8 col-sm-9">
                     <div class="mobile-menu-icon">
@@ -38,7 +38,7 @@ http://www.templatemo.com/tm-475-holiday
                     </div>
                     <nav class="tm-nav">
                         <ul>
-                            <li><a href="{{URL('/welcome')}}" class="active">Home</a></li>
+                            <li><a href="{{URL('/welcome')}}" class="">Home</a></li>
                             <li><a href="{{URL('/room')}}">Room</a></li>
                             <li><a href="{{URL('/map')}}">Map</a></li>
                             <li><a href="{{URL('/contact')}}">Contact</a></li>
@@ -100,7 +100,7 @@ http://www.templatemo.com/tm-475-holiday
     <footer class="tm-black-bg">
         <div class="container">
             <div class="row">
-                <p class="tm-copyright-text">Copyright &copy; 2084 Your Company Name 
+                <p class="tm-copyright-text">Copyright &copy; Suvijak Saravornpong 
                 
                 | Designed by <a rel="nofollow" href="http://www.templatemo.com" target="_parent">templatemo</a></p>
             </div>
