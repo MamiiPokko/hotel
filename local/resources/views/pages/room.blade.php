@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<section>
-<div class="section-margin-top">
+<!-- <div class="container"> -->
+    <section>
+    <div class="section-margin-top">
             <div class="row">               
                 <div class="tm-section-header">
                     <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
@@ -11,54 +12,54 @@
                 </div>
             </div>
             <div class="row">
+
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                    <div class="tm-home-box-2">                     
-                        <img src="images/index-03.jpg" alt="image" class="img-responsive">
+                    <div class="tm-home-box-2">
+                        <a href="{{URL('/penhouse')}}">                     
+                            <img src="images/penhouse/pen2.jpg" alt="image" class="img-responsive">
+                        </a>
                         <h3>Penhouse suite room</h3>
                         <p class="tm-date"></p>
-                        <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="{{URL('/penhouse')}}" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Detail</span></a>
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
-                        </div>
+                        <div class="tm-home-box-2-container"></div>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                    <div class="tm-home-box-2">                     
-                        <img src="images/index-04.jpg" alt="image" class="img-responsive">
+                    <div class="tm-home-box-2">
+                    <a href="{{URL('/topfloor')}}">                     
+                        <img src="images/topfloor/top2.jpg" alt="image" class="img-responsive"></a>
                         <h3>Top floor room</h3>
                         <p class="tm-date"></p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="{{URL('/topfloor')}}"" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Deatil</span></a>
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                    <div class="tm-home-box-2">                     
-                        <img src="images/medium/medium1.jpg" alt="image" class="img-responsive">
+                    <div class="tm-home-box-2">
+                    <a href="{{URL('/medium')}}">                     
+                        <img src="images/medium/medium2.jpg" alt="image" class="img-responsive"></a>
                         <h3>Medium floor room</h3>
                         <p class="tm-date"></p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="{{URL('/medium')}}" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Deatil</span></a>
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+ 
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                    <div class="tm-home-box-2 tm-home-box-2-right">                     
-                        <img src="images/pool/pool1.jpg" alt="image" class="img-responsive">
+                    <div class="tm-home-box-2 tm-home-box-2-right">
+                    <a href="{{URL('/pool')}}">                     
+                        <img src="images/pool/pool2.jpg" alt="image" class="img-responsive"></a>
                         <h3> Pool access room</h3>
                         <p class="tm-date"></p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="{{URL('/pool')}}" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Detail</span></a>
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -66,6 +67,6 @@
                 </div>
             </div>          
         </div>
-    </section>      
-
+    </section>
+<!-- </div>       -->
 @endsection 

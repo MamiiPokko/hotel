@@ -45,6 +45,15 @@ table, th, td {
   		<p>500 เมตร</p>
   	</div>
 </div>
+<div class="row">
+  <div class="col-md-3" style=""><i class="fa fa-map-marker" aria-hidden="true"></i> สถานที่ท่องเที่ยว</div>
+</div>
+<div class="col">
+  <div class="col-md-3" style="">หาดป่าตอง
+    <p>2.3 กิโลเมตร</p>
+  </div>
+  
+</div>
 
 </body>
 

@@ -37,3 +37,9 @@ Route::get('check-connect',function(){
  }
 
 });
+
+
+Route::get('change/{locale}', function ($locale) {
+	Session::set('locale', $locale);
+	return Redirect::back();
+});

@@ -38,7 +38,7 @@ http://www.templatemo.com/tm-475-holiday
                     </div>
                     <nav class="tm-nav">
                         <ul>
-                            <li><a href="{{URL('/welcome')}}" class="">Home</a></li>
+                            <!--li><a href="{{URL('/welcome')}}" class="">Home</a></li-->
                             <li><a href="{{URL('/room')}}">Room</a></li>
                             <li><a href="{{URL('/map')}}">Map</a></li>
                             <li><a href="{{URL('/contact')}}">Contact</a></li>
@@ -51,6 +51,8 @@ http://www.templatemo.com/tm-475-holiday
     
     <!-- Banner -->
     <section class="tm-banner">
+      <div class="row">
+        
         <!-- Flexslider -->
         <div class="flexslider flexslider-banner">
           <ul class="slides">
@@ -58,39 +60,41 @@ http://www.templatemo.com/tm-475-holiday
                 <div class="tm-banner-inner">
                     <h1 class="tm-banner-title">PATONG <span class="tm-yellow-text">OCEAN</span> SEAVIEW RESORT</h1>
                     <p class="tm-banner-subtitle">For Your Holidays</p>
-                    <a href="#more" class="tm-banner-link">Learn More</a>   
+                    <a href="{{URL('/room')}}" class="tm-banner-link">Learn More</a>   
                 </div>
-                <img src="{{URL('images/patong1.jpg')}}" alt="Image" />  
+                <img src="{{URL('images/banner/rebanner.jpg')}}" alt="Image" />  
             </li>
             <li>
                 <div class="tm-banner-inner">
                     <h1 class="tm-banner-title">FIND <span class="tm-yellow-text">THE BEST</span> PLACE</h1>
                     <p class="tm-banner-subtitle">Wonderful Destinations</p>
-                    <a href="#more" class="tm-banner-link">Learn More</a>   
+                    <a href="{{URL('/room')}}" class="tm-banner-link">Learn More</a>   
                 </div>
-              <img src="{{URL('images/phromtape.jpg')}}" alt="Image" />
+              <img src="{{URL('images/banner/rebanner2.jpg')}}" alt="Image" />
             </li>
             <li>
                 <div class="tm-banner-inner">
                     <h1 class="tm-banner-title">Proin <span class="tm-yellow-text">Gravida</span> Nibhvell</h1>
                     <p class="tm-banner-subtitle">Velit Auctor</p>
-                    <a href="#more" class="tm-banner-link">Learn More</a>   
+                    <a href="{{URL('/room')}}" class="tm-banner-link">Learn More</a>   
                 </div>
-              <img src="{{URL('images/khaorang.jpg')}}" alt="Image" />
+              <img src="{{URL('images/banner/rebanner3.jpg')}}" alt="Image" />
             </li>
           </ul>
         </div> 
+      </div>
 
     </section>
 
     <section class="tm-white-bg section-padding-bottom">
         <div class="container">
- 
-              @yield('content')
+          @yield('content')
+            
                 </div>
 
             </div>      
         </div>
+         
     </section>
 
     <!-- gray bg -->    

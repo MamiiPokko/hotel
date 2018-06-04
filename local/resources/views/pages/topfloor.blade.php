@@ -9,11 +9,21 @@
 </style>
 
 <section>
+<!--header-->
+      <div class="section-margin-top">
+            <div class="row">               
+                <div class="tm-section-header">
+                    <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">TOP FLOOR ROOM</h2></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>  
+                </div>
+            </div>
+
 <!--slide images-->
 <div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="{{URL('/images/khaorang.jpg')}}" style="width:100%">
-  <img class="mySlides" src="{{URL('/images/sarasin.jpg')}}" style="width:100%">
-  <img class="mySlides" src="{{URL('/images/tours-10.jpg')}}" style="width:100%">
+  <img class="mySlides" src="{{URL('/images/topfloor/top1.jpg')}}">
+  <img class="mySlides" src="{{URL('/images/topfloor/top3.jpg')}}">
+  <!--img class="mySlides" src="{{URL('/images/tours-10.jpg')}}" style="width:100%"-->
   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
@@ -23,25 +33,15 @@
   </div>
 </div>
 
-<!--header-->
 <div class="section-margin-top">
-	<div class="row">               
-		<div class="tm-section-header">
-			<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
-			<div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">TOP FLOOR ROOM</h2></div>
-			<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>  
-        </div>
-    </div>
-</div>
+              <div class="row">               
+                <div class="tm-section-header">
+                    <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">FACILITIES</h2></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>  
+                </div>
+            </div>
 
-<div class="section-margin-top">
-	<div class="row">               
-		<div class="tm-section-header">
-			<div class=""><hr><h2>Faciliteis</h2></div>
-			<div class=""></div>
-			<div class=""><hr></div>  
-		</div>
-	</div>
 <div class="row">
    	<div class="col-md-3" style=""><i class="fa fa-plane" aria-hidden="true"></i> สนามบินใกล้เคียง</div>
     <div class="col-md-3" style=""><i class="fa fa-hospital-o" aria-hidden="true"></i> โรงพยาบาล และ คลิกนิก</div>
