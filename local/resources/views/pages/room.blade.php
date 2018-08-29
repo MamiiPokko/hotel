@@ -1,3 +1,4 @@
+{{ App::setLocale( Config::get('app.locale') ) }}
 @extends('layouts.app')
 
 @section('content')

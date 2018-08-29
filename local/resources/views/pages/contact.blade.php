@@ -1,3 +1,4 @@
+{{ App::setLocale( Config::get('app.locale') ) }}
 @extends('layouts.app')
 
 @section('content')
@@ -7,17 +8,17 @@
 	<div class="row">               
 		<div class="tm-section-header">
 			<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
-			<div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">CONTACT US</h2></div>
+			<div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">@lang('message.contact_us')</h2></div>
 			<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>  
         </div>
     </div>
 </div>
 
 <div class="row">
-   	<div class="col-md-3" style=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>&nbsp;facebook</div>
-    <div class="col-md-3" style=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i>&nbsp;instagram</div>
-    <div class="col-md-3" style=""><i class="fa fa-twitter fa-3x" aria-hidden="true"></i>&nbsp;twitter</div>
-    <div class="col-md-3" style=""><i class="fa fa-phone-square fa-3x" aria-hidden="true"></i>&nbsp;telephone</div>
+   	<div class="col-md-3" style=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>&nbsp;@lang('message.facebook')</div>
+    <div class="col-md-3" style=""><i class="fa fa-instagram fa-3x" aria-hidden="true"></i>&nbsp;@lang('message.instagram')</div>
+    <div class="col-md-3" style=""><i class="fa fa-twitter fa-3x" aria-hidden="true"></i>&nbsp;@lang('message.twitter')</div>
+    <div class="col-md-3" style=""><i class="fa fa-phone-square fa-3x" aria-hidden="true"></i>&nbsp;@lang('message.telephone')</div>
  </div>
  <div class="col">
   	<div class="col-md-3" style=""><a target ="_blank" href= "https://www.facebook.com/Jornguan.Saravornpong">http://www.facebook.com<br>/Jornguan.Saravornpong</a>

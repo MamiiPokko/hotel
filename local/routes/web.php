@@ -40,6 +40,9 @@ Route::get('check-connect',function(){
 
 
 Route::get('change/{locale}', function ($locale) {
-	Session::set('locale', $locale);
+	App::setLocale($locale);
+	// Session::set('locale', $locale);
+	session(['locale' => $locale]);
+
 	return Redirect::back();
 });

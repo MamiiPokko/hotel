@@ -1,3 +1,4 @@
+{{ App::setLocale( Config::get('app.locale') ) }}
 @extends('layouts.app')
 
 @section('content')
@@ -19,38 +20,38 @@ table, th, td {
             <div class="row">               
                 <div class="tm-section-header">
                     <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
-                    <div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">ระยะทาง</h2></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">@lang('message.distance')</h2></div>
                     <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>  
                 </div>
             </div>
 <body>	
 
  <div class="row">
-   	<div class="col-md-3" style=""><i class="fa fa-plane" aria-hidden="true"></i> สนามบินใกล้เคียง</div>
-    <div class="col-md-3" style=""><i class="fa fa-hospital-o" aria-hidden="true"></i> โรงพยาบาล และ คลิกนิก</div>
-    <div class="col-md-3" style=""><i class="fa fa-heartbeat" aria-hidden="true"></i> ร้านขายยา</div>
-    <div class="col-md-3" style=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> ร้านสะดวกซื้อ</div>
+   	<div class="col-md-3" style=""><i class="fa fa-plane" aria-hidden="true"></i>@lang('message.airport')</div>
+    <div class="col-md-3" style=""><i class="fa fa-hospital-o" aria-hidden="true"></i>@lang('message.hospital')</div>
+    <div class="col-md-3" style=""><i class="fa fa-heartbeat" aria-hidden="true"></i> @lang('message.pharmacy')</div>
+    <div class="col-md-3" style=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>@lang('message.convenience_store')</div>
  </div>
  <div class="col">
-  	<div class="col-md-3" style="">สนามบินนานาชาติภูเก็ต
-  		<p>38.2 กิโลเมตร</p>
+  	<div class="col-md-3" style="">@lang('message.phuket_international_airport')
+  		<p>38.2 @lang('message.kilometer')</p>
   	</div>
-  	<div class="col-md-3" style="">โรงพยาบาลป่าตอง
-  		<p>2.4 กิโลเมตร</p>
+  	<div class="col-md-3" style="">@lang('message.patong_hospital')
+  		<p>2.4 @lang('message.kilometer')</p>
   	</div>
-  	<div class="col-sm-3" style="">Pharmacy
-  		<p>1.9 กิโลเมตร</p>
+  	<div class="col-sm-3" style="">@lang('message.pharmacy')
+  		<p>1.9 @lang('message.kilometer')</p>
   	</div>
-  	<div class="col-sm-3" style="">Tesco Lotus Supermarket
-  		<p>500 เมตร</p>
+  	<div class="col-sm-3" style="">@lang('message.tesco_lotus_supermarket')
+  		<p>500 @lang('message.meter')</p>
   	</div>
 </div>
 <div class="row">
-  <div class="col-md-3" style=""><i class="fa fa-map-marker" aria-hidden="true"></i> สถานที่ท่องเที่ยว</div>
+  <div class="col-md-3" style=""><i class="fa fa-map-marker" aria-hidden="true"></i>@lang('message.tourist_attraction')</div>
 </div>
 <div class="col">
-  <div class="col-md-3" style="">หาดป่าตอง
-    <p>2.3 กิโลเมตร</p>
+  <div class="col-md-3" style="">@lang('message.patong_beach')
+    <p>2.3 @lang('message.kilometer')</p>
   </div>
   
 </div>

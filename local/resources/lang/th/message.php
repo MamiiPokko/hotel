@@ -1,13 +1,27 @@
 <?php
 return [
-    'service' => 'บริการของเรา',
-    'portfolio' => 'ผลงาน',
-    'about' => 'เกี่ยวกับเรา',
-    'team' => 'ทีมงาน',
-    'welcome' => 'ยินดีต้อนรับ',
-    'body' => 'วิธีทำเว็บไซต์ 2 ภาษาหรือมากกว่า'
     'room' => 'ห้องพัก',
     'map' => 'แผนที่',
     'contact' => 'ติดต่อเรา',
     'facilities' => 'สิ่งอำนวยความสะดวก',
+    'hospital' => 'โรงพยาบาล',
+    'pharmacy' => 'ร้านขายยา',
+    'convenience_store' => 'ร้านสะดวกซื้อ',
+    'wifi' => 'อินเตอร์เน็ตไร้สาย',
+    'contact_us' => 'ติดต่อเรา' ,
+    'tourist_attraction' => 'สถานที่ท่องเที่ยว',
+    'bed' => 'เตียง',
+    'facebook' => 'เฟสบุ๊ค',
+    'instagram' => 'อินสตาแกรม',
+    'twitter' => 'ทวิตเตอร์',
+    'telephone' => 'เบอร์ติดต่อ',
+    'distance' => 'ระยะทาง',
+    'airport' => 'สนามบิน',
+    'phuket_international_airport' => 'สนามบินนานาชาติภูเก็ต',
+    'patong_hospital' => 'โรงพยาบาลป่าตอง',
+    'patong_beach' => 'หาดป่าตอง',
+    'kilometer' => 'กิโลเมตร' ,
+    'meter' => 'เมตร',
+    'tesco_lotus_supermarket' => 'ห้างสรรพสินค้าเทสโก้โลตัส',
+
 ];

@@ -1,5 +1,3 @@
-{{ App::setLocale( Config::get('app.locale') ) }}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +11,10 @@ http://www.templatemo.com/tm-475-holiday
 -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
   <link href="{{URL('css/font-awesome.min.css')}}" rel="stylesheet">
-  
+  <link href="{{URL('css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{URL('css/bootstrap-datetimepicker.min.css')}}" rel="stylesheet">  
   <link href="{{URL('css/flexslider.css')}}" rel="stylesheet">
   <link href="{{URL('css/templatemo-style.css')}}" rel="stylesheet">
-  <link href="{{URL('css/bootstrap.min.css')}}" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,30 +29,27 @@ http://www.templatemo.com/tm-475-holiday
     <div class="tm-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-3 tm-site-name-container">
-                    <a href="{{URL('/welcome')}}" class="tm-site-name">PATONG OCEAN SEAVIEW</a>    
+                <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+                    <a href="{{URL('/welcome')}}" class="tm-site-name">PATONG OCEAN</a>    
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-9">
+                <div class="col-lg-6 col-md-8 col-sm-9">
                     <div class="mobile-menu-icon">
                       <i class="fa fa-bars"></i>
                     </div>
                     <nav class="tm-nav">
                         <ul>
                             <!--li><a href="{{URL('/welcome')}}" class="">Home</a></li-->
-                            <li><a href="{{URL('/room')}}">@lang('message.room')</a></li>
-                            <li><a href="{{URL('/map')}}">@lang('message.map')</a></li>
-                            <li><a href="{{URL('/contact')}}">@lang('message.contact')</a></li>
-                           <!--  <li class="dropdown"><a href="" class="dropdown-toggle" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              {{ Config::get('app.locale') }}
-                              <span class="caret"></span>
-                             </a>
-                            </li>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownLang">
-                              <li><a href="{{ URL::to('change/en') }}">ENGLISH</a></li>
-                              <li><a href="{{ URL::to('change/th') }}">THAILAND</a></li>
-                            </ul> -->
-                            <li @if(Config::get('app.locale') == 'en'){{ "style=background:#FCDD44" }}@endif><a href="{{ URL::to('change/en') }}">ENGLISH</a></li>
-                            <li @if(Config::get('app.locale') == 'th'){{ "style=background:#FCDD44" }}@endif><a href="{{ URL::to('change/th') }}">THAILAND</a></li>
+                            <li><a href="{{URL('/room')}}">Room</a></li>
+                            <li><a href="{{URL('/map')}}">Map</a></li>
+                            <li><a href="{{URL('/contact')}}">Contact</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            {{ Config::get('app.locale') }}
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownLang">
+                            <li><a href="{{ URL::to('change/en') }}">ENGLISH</a></li>
+                            <li><a href="{{ URL::to('change/th') }}">THAILAND</a></li>
+                          </ul>
                         </ul>
                     </nav>      
                 </div>              
@@ -88,8 +82,8 @@ http://www.templatemo.com/tm-475-holiday
             </li>
             <li>
                 <div class="tm-banner-inner">
-                    <h1 class="tm-banner-title">Your <span class="tm-yellow-text">Vacation</span> Times</h1>
-                    <p class="tm-banner-subtitle">In Phuket</p>
+                    <h1 class="tm-banner-title">Proin <span class="tm-yellow-text">Gravida</span> Nibhvell</h1>
+                    <p class="tm-banner-subtitle">Velit Auctor</p>
                     <a href="{{URL('/room')}}" class="tm-banner-link">Learn More</a>   
                 </div>
               <img src="{{URL('images/banner/rebanner3.jpg')}}" alt="Image" />
@@ -125,8 +119,8 @@ http://www.templatemo.com/tm-475-holiday
         </div>   
     </footer>
     <script type="text/javascript" src="{{URL('js/jquery-1.11.2.min.js')}}"></script>              <!-- jQuery -->
-    <script type="text/javascript" src="{{URL('js/bootstrap.min.js')}}"></script>                  <!-- bootstrap js -->
     <script type="text/javascript" src="{{URL('js/moment.js')}}"></script>                         <!-- moment.js -->
+    <script type="text/javascript" src="{{URL('js/bootstrap.min.js')}}"></script>                  <!-- bootstrap js -->
     <script type="text/javascript" src="{{URL('js/bootstrap-datetimepicker.min.js')}}"></script>   <!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
     <script type="text/javascript" src="{{URL('js/jquery.flexslider-min.js')}}"></script>
 <!--
